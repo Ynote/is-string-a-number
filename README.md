@@ -10,8 +10,9 @@ clean and unique way to check if a value is a number or a specific notation of
 number, type checking on numbers is hard.
 
 Front-end developers often have to deal with user inputs, especially within
-forms. The need, here, is to validate a value as a simple and plain number like
-`42` and not `42e24` (accepted as valid number in a `<input type="number" />`).
+forms. The need, here, is to validate a value as a simple and plain number
+(integer or float) like `42` or `42.2` and not `42e24` (accepted as valid number
+in a `<input type="number" />`).
 
 This utility intends to help front-end developers to deal with that kind of
 validations.
@@ -22,6 +23,7 @@ validations.
 import isPlainNumber from 'is-plain-number'
 
 isPlainNumber(42)      // => true
+isPlainNumber(42.2)    // => true
 isPlainNumber('42')    // => true
 isPlainNumber('42e42') // => false
 isPlainNumber('0x2a')  // => false
