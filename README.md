@@ -4,6 +4,19 @@
 is a number or plain number string (not in scientific exponential notation or
 hexadecimal notation for instance).
 
+## Motivation
+
+This utility module has a front-end purpose. As JavaScript doesn't provide a
+clean and unique way to check if a value is a number or a specific notation of
+number, type checking on numbers is hard.
+
+Front-end developers often have to deal with user inputs, especially within
+forms. The need, here, is to validate a value as a simple and plain number like
+`42` and not `42e24` (accepted as valid number in a `<input type="number" />`).
+
+This utility intends to help front-end developers to deal with that kind of
+validations.
+
 ## Install
 
 Install with npm:
