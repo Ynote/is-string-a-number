@@ -1,0 +1,17 @@
+#! /bin/sh
+
+if [ "$1" = "" ]; then
+  echo
+  echo "=> bin/release needs a version number argument!" >&2
+  exit 1
+fi
+
+# Create tag
+git tag -a v$1 -m "Version $1"
+git push origin --tags
+
+# Publish
+npm publish
+
+echo
+echo "Done! is-plain-number v$1 is published! ༼ つ ◕◡◕ ༽つ"
