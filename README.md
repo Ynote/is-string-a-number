@@ -1,8 +1,7 @@
 # is-plain-number [![NPM version](https://img.shields.io/npm/v/is-plain-number.svg?style=flat)](https://www.npmjs.com/package/is-number)
 
-**is-plain-number** is a JavaScript utility. It returns `true` if the value
-is a number or plain number string (not in scientific exponential notation or
-hexadecimal notation for instance).
+> Returns `true` if the value is a number or a string of a plain number
+(not in scientific exponential notation or hexadecimal notation for instance).
 
 ## Motivation
 
@@ -17,9 +16,23 @@ forms. The need, here, is to validate a value as a simple and plain number like
 This utility intends to help front-end developers to deal with that kind of
 validations.
 
+## Code example
+
+```js
+import isPlainNumber from 'is-plain-number'
+
+isPlainNumber(42)      // => true
+isPlainNumber('42')    // => true
+isPlainNumber('42e42') // => false
+isPlainNumber('0x2a')  // => false
+isPlainNumber('42.')   // => false
+```
+
+More details on the [usage section](#usage).
+
 ## Install
 
-Install with npm:
+Install with [npm](https://www.npmjs.com/):
 ```sh
 $ npm install --save is-plain-number
 ```
@@ -95,7 +108,7 @@ Everyone interacting in the GraphAttack project’s codebases, issue trackers,
 chat rooms and mailing lists is expected to follow the
 [code of conduct](https://github.com/Ynote/is-plain-number/blob/master/CODE_OF_CONDUCT.md).
 
-## Notes
+## Credits
 
 Special thanks to [Jon Schlinkert](https://github.com/jonschlinkert/) for his
 great [is-number](https://github.com/jonschlinkert/is-number) module that
@@ -105,3 +118,5 @@ inspired me.
 
 The module is available as open source under the terms of the [MIT
 License](LICENSE.md).
+
+MIT © [Ynote_hk](http://ynote.hk)
