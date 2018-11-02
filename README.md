@@ -22,6 +22,53 @@ With ECMAScript module:
 ```js
 import isPlainNumber from 'is-plain-number'
 ```
+
+### true
+```js
+isPlainNumber(0)       // => true
+isPlainNumber(.42)     // => true
+isPlainNumber(42)      // => true
+isPlainNumber(-42)     // => true
+isPlainNumber(-42.2)   // => true
+isPlainNumber('0')     // => true
+isPlainNumber('42')    // => true
+isPlainNumber('42.2')  // => true
+isPlainNumber('-42')   // => true
+isPlainNumber('-42.2') // => true
+isPlainNumber('-0.42') // => true
+```
+
+### false
+```js
+isPlainNumber('+42')                 // => false
+isPlainNumber('42,2')                // => false
+isPlainNumber('42e24')               // => false
+isPlainNumber('42E24')               // => false
+isPlainNumber('42e+24')              // => false
+isPlainNumber('42e-24')              // => false
+isPlainNumber('42foobar')            // => false
+isPlainNumber('0x2a')                // => false
+isPlainNumber('.')                   // => false
+isPlainNumber('42.')                 // => false
+isPlainNumber(null)                  // => false
+isPlainNumber(undefined)             // => false
+isPlainNumber(NaN)                   // => false
+isPlainNumber('Alice in Wonderland') // => false
+isPlainNumber('')                    // => false
+isPlainNumber('   ')                 // => false
+isPlainNumber('\r\n\t')              // => false
+isPlainNumber([])                    // => false
+isPlainNumber({})                    // => false
+isPlainNumber(function() {})         // => false
+isPlainNumber(true)                  // => false
+isPlainNumber(false)                 // => false
+isPlainNumber('true')                // => false
+isPlainNumber('false')               // => false
+isPlainNumber(Infinity)              // => false
+isPlainNumber(-Infinity)             // => false
+isPlainNumber(new Date())            // => false
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
