@@ -11,7 +11,7 @@ number, type checking on numbers is hard.
 
 Front-end developers often have to deal with user inputs, especially within
 forms. The need, here, is to validate a value as a simple and plain number
-(integer or float) like `42` or `42.2` and not `42e24` (accepted as valid number
+(integer or float) like `42` or `42.2` and not `42e24` (this latter is accepted as valid number
 in a `<input type="number" />`).
 
 This utility intends to help front-end developers to deal with that kind of
