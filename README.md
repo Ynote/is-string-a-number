@@ -1,7 +1,7 @@
 # is-plain-number [![NPM version](https://img.shields.io/npm/v/is-plain-number.svg?style=flat)](https://www.npmjs.com/package/is-plain-number) [![Bundle size](https://img.shields.io/bundlephobia/min/is-plain-number.svg)](https://www.npmjs.com/package/is-plain-number)
 
 > Returns `true` if the value is a number or a string of a plain number
-(not in scientific exponential notation or hexadecimal notation for instance).
+(not in scientific exponential notation or hexadecimal base for instance).
 
 ## Motivation
 
@@ -10,7 +10,7 @@ clean and unique way to check if a value is a number or a specific notation of
 number, type checking on numbers is hard.
 
 Front-end developers often have to deal with user inputs, especially within
-forms. The need, here, is to validate a value as a simple and plain number
+forms. The need, here, is to validate a value as a simple and plain number in decimal base 
 (integer or float) like `42` or `42.2` and not `42e24` (this latter is accepted as valid number
 in a `<input type="number" />`).
 
