@@ -11,7 +11,7 @@ module.exports = function(value) {
   //
   // `parseFloat` with strings returns a floating point number with inconsistent behaviours:
   // - strings with scientific exponential notation (eg. `parseFloat("42e24")` returns `4.2e+25`)
-  // - strings with hexadecimal notation (eg. `parseFloat("0x2a")` returns `0`)
+  // - strings with hexadecimal base (eg. `parseFloat("0x2a")` returns `0`)
   // - strings that start with a number (eg. `parseFloat("42foobar") returns `42`)
   return String(float) === String(value)
 }
