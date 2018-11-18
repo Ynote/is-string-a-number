@@ -2,17 +2,10 @@
 
 require('mocha')
 var assert = require('assert')
-var isPlainNumber = require('./')
+var isStringANumber = require('./')
 
-describe('isPlainNumber', function() {
+describe('isStringANumber', function() {
   var truthyFixtures = [
-    0,
-    .42,
-    42,
-    42.2,
-    -42,
-    -42.2,
-    -0.42,
     '0',
     '42',
     '42.2',
@@ -22,6 +15,13 @@ describe('isPlainNumber', function() {
   ]
 
   var falseyFixtures = [
+    0,
+    .42,
+    42,
+    42.2,
+    -42,
+    -42.2,
+    -0.42,
     '+42',
     '42,2',
     '42e24',
@@ -54,7 +54,7 @@ describe('isPlainNumber', function() {
   truthyFixtures.forEach(function(value) {
     it('is true with ' + JSON.stringify(value), function() {
       assert(
-        isPlainNumber(value),
+        isStringANumber(value),
         'expected "' + String(value) + '" to be a plain number'
       )
     })
@@ -63,7 +63,7 @@ describe('isPlainNumber', function() {
   falseyFixtures.forEach(function(value) {
     it('is false with ' + JSON.stringify(value), function() {
       assert(
-        !isPlainNumber(value),
+        !isStringANumber(value),
         'expected "' + String(value) + '" not to be a plain number'
       )
     })
