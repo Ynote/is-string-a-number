@@ -14,4 +14,4 @@ git push origin --tags
 npm publish
 
 echo
-echo "Done! is-plain-number v$1 is published! ༼ つ ◕◡◕ ༽つ"
+echo "Done! is-string-a-number v$1 is published! ༼ つ ◕◡◕ ༽つ"

@@ -1,14 +1,14 @@
 {
-  "name": "is-plain-number",
-  "version": "1.0.0",
-  "description": "This is a JavaScript utility. It returns `true` if the value is a number or plain number string (not in scientific exponential notation or hexadecimal notation for instance).",
+  "name": "is-string-a-number",
+  "version": "2.0.0",
+  "description": "This is a JavaScript utility. It returns `true` if the value is a string number.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ynote/is-plain-number.git"
+    "url": "git+https://github.com/Ynote/is-string-a-number.git"
   },
   "keywords": [
     "integer",
@@ -26,9 +26,9 @@
   "author": "Fanny Cheung <fanny@ynote.hk> (http://ynote.hk)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ynote/is-plain-number/issues"
+    "url": "https://github.com/Ynote/is-string-a-number/issues"
   },
-  "homepage": "https://github.com/Ynote/is-plain-number#readme",
+  "homepage": "https://github.com/Ynote/is-string-a-number#readme",
   "devDependencies": {
     "mocha": "^5.2.0"
   }
