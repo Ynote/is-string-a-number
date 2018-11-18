@@ -4,12 +4,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## unreleased
 
-Breaking changes:
-- Rename the module `is-plain-number` to `is-string-a-number`: after some
-  thoughts, I realised that the purpose of my module was to specifically check
-  if a `string` value was representing a number in decimal base and notation.
-- Only check `string` values. `number` values are not accepted anymore.
+## [v2.0.0] - 2018-11-18
 
+Breaking changes:
+- **Rename the module `is-plain-number` to `is-string-a-number`**. After some
+  thoughts, I realised that the purpose of the module was to specifically check
+  if a `string` value was representing a number in decimal base and fixed
+  notation. I renamed the module so it can clearly express what it was doing.
+- Only check `string` values. `number` values are not accepted anymore.
 
 ## [v1.0.1] - 2018-11-03
 
