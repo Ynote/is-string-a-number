@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## unreleased
 
+## [v2.0.1] - 2018-11-19
+
+Patch:
+- Add an early return if the value is not a `string`.
+
 ## [v2.0.0] - 2018-11-18
 
 Breaking changes:

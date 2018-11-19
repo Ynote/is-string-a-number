@@ -1,6 +1,6 @@
 {
   "name": "is-string-a-number",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "This is a JavaScript utility. It returns `true` if the value is a string number written in fixed notation and in decimal base.",
   "main": "index.js",
   "scripts": {

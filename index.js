@@ -14,10 +14,9 @@ module.exports = function(value) {
     return false
   }
 
-  var float = parseFloat(value)
+  if (typeof value !== 'string') return false
 
-  if (isNaN(float)) return false
-  if (!isFinite(float)) return false
+  var float = parseFloat(value)
 
   return String(float) === String(value)
 }
