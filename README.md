@@ -48,48 +48,48 @@ import isStringANumber from 'is-string-a-number'
 
 ### true
 ```js
-isPlainNumber('0')     // => true
-isPlainNumber('42')    // => true
-isPlainNumber('42.2')  // => true
-isPlainNumber('-42')   // => true
-isPlainNumber('-42.2') // => true
-isPlainNumber('-0.42') // => true
+isStringANumber('0')     // => true
+isStringANumber('42')    // => true
+isStringANumber('42.2')  // => true
+isStringANumber('-42')   // => true
+isStringANumber('-42.2') // => true
+isStringANumber('-0.42') // => true
 ```
 
 ### false
 ```js
-isPlainNumber(0)                     // => false
-isPlainNumber(.42)                   // => false
-isPlainNumber(42)                    // => false
-isPlainNumber(-42)                   // => false
-isPlainNumber(-42.2)                 // => false
-isPlainNumber('+42')                 // => false
-isPlainNumber('42,2')                // => false
-isPlainNumber('42e24')               // => false
-isPlainNumber('42E24')               // => false
-isPlainNumber('42e+24')              // => false
-isPlainNumber('42e-24')              // => false
-isPlainNumber('42foobar')            // => false
-isPlainNumber('0x2a')                // => false
-isPlainNumber('.')                   // => false
-isPlainNumber('42.')                 // => false
-isPlainNumber(null)                  // => false
-isPlainNumber(undefined)             // => false
-isPlainNumber(NaN)                   // => false
-isPlainNumber('Alice in Wonderland') // => false
-isPlainNumber('')                    // => false
-isPlainNumber('   ')                 // => false
-isPlainNumber('\r\n\t')              // => false
-isPlainNumber([])                    // => false
-isPlainNumber({})                    // => false
-isPlainNumber(function() {})         // => false
-isPlainNumber(true)                  // => false
-isPlainNumber(false)                 // => false
-isPlainNumber('true')                // => false
-isPlainNumber('false')               // => false
-isPlainNumber(Infinity)              // => false
-isPlainNumber(-Infinity)             // => false
-isPlainNumber(new Date())            // => false
+isStringANumber(0)                     // => false
+isStringANumber(.42)                   // => false
+isStringANumber(42)                    // => false
+isStringANumber(-42)                   // => false
+isStringANumber(-42.2)                 // => false
+isStringANumber('+42')                 // => false
+isStringANumber('42,2')                // => false
+isStringANumber('42e24')               // => false
+isStringANumber('42E24')               // => false
+isStringANumber('42e+24')              // => false
+isStringANumber('42e-24')              // => false
+isStringANumber('42foobar')            // => false
+isStringANumber('0x2a')                // => false
+isStringANumber('.')                   // => false
+isStringANumber('42.')                 // => false
+isStringANumber(null)                  // => false
+isStringANumber(undefined)             // => false
+isStringANumber(NaN)                   // => false
+isStringANumber('Alice in Wonderland') // => false
+isStringANumber('')                    // => false
+isStringANumber('   ')                 // => false
+isStringANumber('\r\n\t')              // => false
+isStringANumber([])                    // => false
+isStringANumber({})                    // => false
+isStringANumber(function() {})         // => false
+isStringANumber(true)                  // => false
+isStringANumber(false)                 // => false
+isStringANumber('true')                // => false
+isStringANumber('false')               // => false
+isStringANumber(Infinity)              // => false
+isStringANumber(-Infinity)             // => false
+isStringANumber(new Date())            // => false
 ```
 
 ## Contributing
