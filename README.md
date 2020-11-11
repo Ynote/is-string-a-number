@@ -1,3 +1,5 @@
+? This project has moved to https://gitlab.com/ynote_hk/is-string-a-number.
+
 # is-string-a-number [![NPM version](https://img.shields.io/npm/v/is-string-a-number.svg?style=flat)](https://www.npmjs.com/package/is-string-a-number) [![Bundle size](https://img.shields.io/bundlephobia/min/is-string-a-number.svg)](https://www.npmjs.com/package/is-string-a-number)
 
 > Returns `true` if the value is a string number written in fixed notation and
